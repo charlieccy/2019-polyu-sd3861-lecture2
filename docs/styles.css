@@ -5,7 +5,7 @@ html {
   padding: 0;
   min-height: 400px;
 }
-​
+
 body {
   display: flex;
   box-sizing: border-box;
@@ -15,38 +15,38 @@ body {
   font-size: 12px;
   flex-direction: column;
 }
-​
+
 svg {
   border-radius: 50%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
-​
+
 .cloud {
   transform-origin: 50%;
   &.blur {
     filter: url(#blur);
   }
 }
-​
+
 // Credit to @billyysea for the sky gradients
 // https://codepen.io/billyysea/pen/whjbK?editors=1100
-​
+
 .sky-gradient-0 {
   background: linear-gradient(to bottom, #4a4969 0%, #7072ab 50%, #cd82a0 100%);
 }
-​
+
 .sky-gradient-1 {
   background: linear-gradient(to bottom, #757abf 0%, #8583be 60%, #eab0d1 100%);
 }
-​
+
 .sky-gradient-2 {
   background: linear-gradient(to bottom, #82addb 0%, #ebb2b1 100%);
 }
-​
+
 .sky-gradient-3 {
   background: linear-gradient(to bottom, #94c5f8 1%, #a6e6ff 70%, #b1b5ea 100%);
 }
-​
+
 .sky-gradient-4 {
   background: linear-gradient(to bottom, #1e528e 0%, #265889 50%, #9da671 100%);
 }
@@ -72,7 +72,7 @@ svg {
     #2f1107 100%
   );
 }
-​
+
 button {
   border: 1px solid #333;
   border-radius: 2em;
@@ -86,32 +86,32 @@ button {
     transform: scale(1.1);
   }
 }
-​
+
 .pop {
   animation: pop 0.3s ease-in-out forwards;
 }
-​
+
 .slidein {
   animation: slidein 1s ease-out forwards;
 }
-​
+
 .fromLeft {
   animation: fromleft 1s ease-out forwards;
 }
-​
+
 .fromRight {
   animation: fromright 1s ease-out forwards;
 }
-​
+
 #mountain,
 .highlight {
   transform-origin: 50% 100%;
 }
-​
+
 button:focus {
   outline: 0;
 }
-​
+
 @keyframes slidein {
   from {
     transform: scale(0.925);
@@ -120,7 +120,7 @@ button:focus {
     transform: scale(1);
   }
 }
-​
+
 @keyframes fromleft {
   from {
     transform: translateX(-1px);
@@ -129,7 +129,7 @@ button:focus {
     transform: translateX(0px);
   }
 }
-​
+
 @keyframes fromright {
   from {
     transform: translateX(1px);
@@ -138,7 +138,7 @@ button:focus {
     transform: translateX(0px);
   }
 }
-​
+
 @keyframes clouds {
   from {
     transform: translateX((random(11) + 4)px);
